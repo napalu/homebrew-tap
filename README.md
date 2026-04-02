@@ -14,6 +14,7 @@ brew install sympa
 ## Upgrade
 
 ```bash
+brew update
 brew upgrade sympa
 ```
 
