@@ -5,21 +5,21 @@
 class Sympa < Formula
   desc "Symmetric-only password store wrapping age"
   homepage "https://github.com/napalu/sympa"
-  version "0.1.2"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/napalu/sympa/releases/download/v0.1.2/sympa_0.1.2_darwin_amd64.tar.gz"
-      sha256 "d5f50a15b5a49643ecbce5b0c369764ea60b2e9292d3256d0476506263fafe6f"
+      url "https://github.com/napalu/sympa/releases/download/v0.2.0/sympa_0.2.0_darwin_amd64.tar.gz"
+      sha256 "2ddfb14b451c3ec40c5667553ee294b1dbebc777c7db900c570fc6719f22f8b8"
 
       define_method(:install) do
         bin.install "sympa"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/napalu/sympa/releases/download/v0.1.2/sympa_0.1.2_darwin_arm64.tar.gz"
-      sha256 "8440d436988ee940073ebe2d4a493f0767ede960bc5786f304d21361bc1254c5"
+      url "https://github.com/napalu/sympa/releases/download/v0.2.0/sympa_0.2.0_darwin_arm64.tar.gz"
+      sha256 "bd56f7c476c74d1a101ed0e00acdcc9a3f3e7973415ea1021b5a1c1e0be9b257"
 
       define_method(:install) do
         bin.install "sympa"
@@ -29,15 +29,15 @@ class Sympa < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/napalu/sympa/releases/download/v0.1.2/sympa_0.1.2_linux_amd64.tar.gz"
-      sha256 "0289a54283073d4d02beeb35aeeeac86aba199a3f1d873314f16c7a4160007d9"
+      url "https://github.com/napalu/sympa/releases/download/v0.2.0/sympa_0.2.0_linux_amd64.tar.gz"
+      sha256 "bdd279025b687826850ecf881cd7c2dc11f722a8ed52103b2f904c10ec1d39a1"
       define_method(:install) do
         bin.install "sympa"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/napalu/sympa/releases/download/v0.1.2/sympa_0.1.2_linux_arm64.tar.gz"
-      sha256 "b8153344b55128c0b126fc827a103ba0b7c6cde74d9a9dcaca3b89df49722fc4"
+      url "https://github.com/napalu/sympa/releases/download/v0.2.0/sympa_0.2.0_linux_arm64.tar.gz"
+      sha256 "4beb3c4f746b4e2117088ed631d49977276c7a992b3a925c4f9502305a2bb817"
       define_method(:install) do
         bin.install "sympa"
       end
